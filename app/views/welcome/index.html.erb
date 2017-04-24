@@ -1,41 +1,182 @@
-
 <div class="jumbotron">
-    <h1 class="title">18K Offer</h1>
-    <p class="slogan">18K Offer 是一个提供18K薪水工作机会的求职网站。
+    <h1 class="title">Kerkerfun</h1>
+    <p class="slogan">一個專為設計產品打造的媒合平台。
     <br>
-        我们希望藉由这个网站，能让大家找到且应征上高薪且优质的工作。
-    <br>
-        凭借自己的努力和天份也会变 Winner
+        只要你有點子，你就是雇主。
     </p>
-    <p class="lead"><a class="btn btn-lg btn-danger" href="/jobs">马上应征</a></p>
+    <p class="lead"><a class="btn btn-lg btn-danger" href="/jobs">馬上媒合</a></p>
 </div>
-<section id="company">
-    <div class = "container-fluid">
+<div class="content-section-a">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-4 ">
-                <div class="thumbnail">
-                    <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-31.png" alt="search" class = "img-thumbnail">
-                    <div class="caption">
-                        <h3>北京朝阳建外SOHO</h3>
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">發揮渾身是點子的你</h2>
+                <p class="lead">使你的創意充分發揮</p>
+            </div>
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <%= image_tag 'pic-1.jpg', class: 'img-responsive' %>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-section-b">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">擁有一身技術，卻沒有好點子嗎？</h2>
+                <p class="lead">我們正在找尋擁有技術的你 </p>
+            </div>
+            <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                <%= image_tag 'pic-2.jpg', class: 'img-responsive' %>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-section-a">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">这是可以乱改的字<br>
+                    动手试试看吧</h2>
+                <p class="lead">摩改大赛可以参考</p>
+            </div>
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <%= image_tag 'pic-3.jpg', class: 'img-responsive' %>
+            </div>
+        </div>
+    </div>
+</div>
+<!--======== 热门职位 =========-->
+<section id="genius" class="our-experts">
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h2 class="section-title">配對人才</h2>
+                        <div class="short-line"></div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-4 ">
-                <div class="thumbnail">
-                    <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-48.png" alt="bid" class = "img-thumbnail">
-                    <div class="caption">
-                        <h3>info@18koffer.com</h3>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3 category-list">
+                            <%= link_to jobs_path(:category => "技术") , class: "category_1" do %>
+                                <div class="expert-box">
+                                    <%= image_tag("category_01.png") %>
+                                </div>
+                                <div>
+                                    <h3>技术</h3>
+                                    <p>Technology</p>
+                                </div>
+                            <% end %>
+                        </div>
+                        <div class="col-md-3 category-list">
+                            <%= link_to jobs_path(:category => "产品") , class: "category_2" do %>
+                                <div class="expert-box">
+                                    <%= image_tag("category_02.png") %>
+                                </div>
+                                <div>
+                                    <h3>产品</h3>
+                                    <p>Product</p>
+                                </div>
+                            <% end %>
+                        </div>
+                        <div class="col-md-3 category-list">
+                            <%= link_to jobs_path(:category => "设计") , class: "category_3" do %>
+                                <div class="expert-box">
+                                    <%= image_tag("category_03.png") %>
+                                </div>
+                                <div>
+                                    <h3>设计</h3>
+                                    <p>Design</p>
+                                </div>
+                            <% end %>
+                        </div>
+                        <div class="col-md-3 category-list">
+                            <%= link_to jobs_path(:category => "运营") , class: "category_4" do %>
+                                <div class="expert-box">
+                                    <%= image_tag("category_04.png") %>
+                                </div>
+                                <div>
+                                    <h3>运营</h3>
+                                    <p>Operation</p>
+                                </div>
+                            <% end %>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-4 ">
-                <div class="thumbnail">
-                    <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-44-00.png" alt="heart" class = "img-thumbnail">
-                    <div class="caption">
-                        <h3>010-12344321</h3>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-3 category-list">
+                            <%= link_to jobs_path(:category => "市场") , class: "category_5" do %>
+                                <div class="expert-box">
+                                    <%= image_tag("category_05.png") %>
+                                </div>
+                                <div>
+                                    <h3>市场</h3>
+                                    <p>Marketing</p>
+                                </div>
+                            <% end %>
+                        </div>
+                        <div class="col-md-3 category-list">
+                            <%= link_to jobs_path(:category => "销售") , class: "category_6" do %>
+                                <div class="expert-box">
+                                    <%= image_tag("category_06.png") %>
+                                </div>
+                                <div>
+                                    <h3>销售</h3>
+                                    <p>Sales</p>
+                                </div>
+                            <% end %>
+                        </div>
+                        <div class="col-md-3 category-list">
+                            <%= link_to jobs_path(:category => "职能") , class: "category_7" do %>
+                                <div class="expert-box">
+                                    <%= image_tag("category_07.png") %>
+                                </div>
+                                <div>
+                                    <h3>职能</h3>
+                                    <p>Office</p>
+                                </div>
+                            <% end %>
+                        </div>
+                        <div class="col-md-3 category-list">
+                            <%= link_to jobs_path , class: "category_all" do %>
+                                <div class="expert-box">
+                                    <%= image_tag("category_08.png") %>
+                                </div>
+                                <div>
+                                    <h3>所有职位</h3>
+                                    <p>All Jobs</p>
+                                </div>
+                            <% end %>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!--======== end 热门职位 =========-->
+<div class="col-md-12">
+    <div class="row box">
+        <div class="box-inner col-md-6 col-md-offset-3">
+            <h1 class="title">Kerkerfun</h1>
+            <p class="slogan">Kerkerfun是媒合創意、設計、技術三方整合的媒合平台。
+          <br>
+                <br>
+                你可以提交你的履歷或點子。
+          <br>
+                Kerkerfun將幫你找到最適合的團隊。
+        </p>
+            <p class="lead">
+                <%= link_to '马上应征', jobs_path, class: 'btn btn-danger' %>
+            </p>
+        </div>
+    </div>
+</div>
