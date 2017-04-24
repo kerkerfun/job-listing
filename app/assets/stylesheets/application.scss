@@ -39,7 +39,7 @@
 
     padding: 10px 15px; //上下10px，左右15px
     line-height: 30px; //文字行高
-    letter-spacing:1px; //字距
+    letter-spacing:2px; //字距
     /* position:absolute; //至中程度
     left:1%; //至中程度 */
   }
@@ -100,6 +100,7 @@
   text-align: center;
   margin-top: 200px;
   margin-bottom: 80px;
+  letter-spacing: 5px;//调整文字间距
 }
 
 .slogan {
@@ -110,10 +111,10 @@
   top: 12px;
 }
 
-.lead {
+.button {
   margin-bottom: 60px;
   text-align: center;
-  color: white;
+  color: #BDBDBD;
 }
 
  .container-fluid .jumbotron{
@@ -136,7 +137,7 @@
 }
 
   .jumbotron h1, .jumbotron .h1 {
-      text-align: center;;//文字左对齐
+      text-align: center;;//文字中齐
       color: #222;  //字体颜色
 
       padding: 50px 20px 0;//上50px，左右20px，下0
@@ -205,10 +206,70 @@
    }
 
    .lead {
+       color: #9E9E9E;//字体颜色
        font-size: 18px;
+       text-align: left;
        font-weight: 400;
    }
+   //---------找尋人才---------
+    .short-line {
+        display: block;
+        background: #EEEEEE;
+        border-style: none;
+        border-radius: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        z-index: 53;
+        width: 200px;
+        height: 2px;
+        position: relative;
+    }
+    .our-experts .expert-box{
 
+       img {
+           width: 100px;
+           margin: 10px;
+
+       }
+   }
+   .our-experts .category-list{
+     text-align: center;
+
+     h3{
+       font-weight: 700;
+       letter-spacing: 1px;
+       font-size: 18px;
+       color: #424242;
+     }
+     p{
+       letter-spacing: 1px;
+       color: #666;
+     }
+   }
+
+   .our-experts .category-list:hover{
+     .expert-box{
+       border: 10px solid #EEEEEE;
+     }
+     h3{
+       color: #455A64;
+     }
+   }
+
+   .our-brand{
+       background-color: #F2F2F2;
+
+       img{
+         margin: 25px 15px 35px 15px;
+         width: 150px;
+       }
+
+   }
+
+
+    //---------找尋人才---------
 
  //---------Box---------
 
@@ -219,33 +280,19 @@
       margin-bottom: 50px;
 
       .box-inner {
-          background-color: rgba(250, 250, 250, 0.69);
-          padding-bottom: 5px;
-          margin-top: 150px;
+          padding-bottom: 50px;
+          margin-top: 50px;
           margin-bottom: 150px;
       }
 
-      .title {
-          text-align: center;
-          margin-bottom: 80px;
-      }
-
-      .slogan {
-          color: #222;
-          margin-top: 10px;
-          margin-bottom: 50px;
-          text-align: center;
-          font-size: 25px;
-          top: 12px;
-      }
-
       .lead {
-          margin-bottom: 60px;
+          margin-bottom: 200px;
           text-align: center;
-          color: white;
       }
   }
  //---------Box---------
+
+
 
 
  //---------Footer---------
